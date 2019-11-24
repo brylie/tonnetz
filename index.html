@@ -55,7 +55,6 @@
 
             function playNote(event) {
                 var note = event.target.dataset["notes"];
-                console.log(note)
 
                 polySynth.triggerAttack(`${note}4`)
             }
@@ -69,8 +68,6 @@
 
 
         function attachChordSounds (tonnetzSvg) {
-            var notes = ["C4", "E4", "G4"];
-
             var chords = tonnetzSvg.querySelectorAll(".chord");
 
             chords.forEach(function (element) {
