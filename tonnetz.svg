@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<svg width="640" height="480" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+ <!-- Created with SVG-edit - https://github.com/SVG-Edit/svgedit-->
+
+ <g class="layer">
+  <title>Layer 1</title>
+  <path class="chord" d="m200.247209,191.565953l61.565978,81.785695c0,0 45.576883,-89.478003 45.576883,-89.203278c0,0.274725 -107.14286,7.417583 -107.14286,7.417583z" fill="#7f7f7f" id="c_e_g" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="5"/>
+  <circle class="note" cx="206.499981" cy="189.774707" fill="#7f7f7f" id="c" r="20.13777" stroke="#000000" stroke-width="5"/>
+  <g id="svg_9"/>
+  <circle class="note" cx="265.225271" cy="274.499997" fill="#7f7f7f" id="e" r="20.13777" stroke="#000000" stroke-width="5"/>
+  <circle class="note" cx="308.049447" cy="186.324173" fill="#7f7f7f" id="g" r="20.13777" stroke="#000000" stroke-width="5"/>
+ </g>
+</svg>
