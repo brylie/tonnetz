@@ -1,0 +1,97 @@
+<html>
+
+<head>
+    <script src="https://unpkg.com/@webcomponents/webcomponentsjs@^2/webcomponents-bundle.js"></script>
+    <script src="https://unpkg.com/tone"></script>
+    <script src="https://unpkg.com/@tonejs/ui"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+
+    <style>
+        .resp-container {
+            position: relative;
+            overflow: hidden;
+            padding-top: 56.25%;
+        }
+
+        .resp-iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Tonnetz</h1>
+
+       <iframe id="tonnetz" class="resp-iframe" src="star.svg"  allow="autoplay" allowfullscreen></iframe>
+
+        <!-- <embed id="tonnetz" src="tonnetz.svg" type="image/svg+xml"> -->
+    <script>
+        //creates 4 instances of the Tone.Synth
+        var polySynth = new Tone.PolySynth(4, Tone.Synth).toMaster();
+
+        var tonnetz = document.getElementById("tonnetz");
+
+        tonnetz.addEventListener("load", attachSounds);
+
+        function attachSounds() {
+            var tonnetzSvg = tonnetz.contentDocument.documentElement;
+
+            attachNoteSounds(tonnetzSvg);
+            attachChordSounds(tonnetzSvg);
+        }
+
+        function attachNoteSounds (tonnetzSvg) {
+            var notes = tonnetzSvg.querySelectorAll(".note");
+
+            notes.forEach(function (element) {
+                element.addEventListener("mousedown", playNote);
+                element.addEventListener("mouseup", stopNote);
+            });
+
+            function playNote(event) {
+                var note = event.target.dataset["notes"];
+                console.log(note)
+
+                polySynth.triggerAttack(`${note}4`)
+            }
+
+            function stopNote(event) {
+                var note = event.target.dataset["notes"];
+
+                polySynth.triggerRelease(`${note}4`)
+            }
+        }
+
+
+        function attachChordSounds (tonnetzSvg) {
+            var notes = ["C4", "E4", "G4"];
+
+            var chords = tonnetzSvg.querySelectorAll(".chord");
+
+            chords.forEach(function (element) {
+                element.addEventListener("mousedown", playChord);
+                element.addEventListener("mouseup", stopChord);
+            });
+
+            function playChord(event, chordNotes) {
+                var notes = event.target.dataset["notes"].split("_");
+
+                polySynth.triggerAttack(notes)
+            }
+
+            function stopChord(event) {
+                var notes = event.target.dataset["notes"].split("_");
+
+                polySynth.triggerRelease(notes)
+            }
+        }
+
+    </script>
+</body>
+
+</html>
