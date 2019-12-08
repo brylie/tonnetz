@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="74mm"
+   height="105mm"
+   viewBox="0 0 74 105"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
+   sodipodi:docname="tannenbaum.svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.4"
+     inkscape:cx="5.2324245"
+     inkscape:cy="245.67748"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1051"
+     inkscape:window-x="1920"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-192)">
+    <rect
+       style="fill:#552200;stroke-width:0.19092026"
+       id="rect12"
+       width="8.8641539"
+       height="14.455391"
+       x="30.820747"
+       y="270.81799"
+       note="C"
+       class="note"
+       data-notes="C" />
+    <path
+       style="fill:#008000;stroke:#000000;stroke-width:0.19092026px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 34.838262,271.05538 c -14.80044,-0.1437 -18.49979,2.97891 -32.271213,2.8872 11.135298,-4.55053 20.557781,-10.81388 26.614485,-20.44301 -6.260915,-1.30807 -14.273571,1.05605 -20.174281,1.9092 8.19902,-5.1354 17.940882,-12.87125 23.260018,-21.9665 -5.718411,-0.79592 -11.343119,-0.33481 -16.336492,0.68186 7.124429,-6.11852 13.322563,-13.98158 18.265079,-22.28201 4.37474,9.04725 9.557744,17.20973 18.627397,23.00666 -7.024749,-1.32665 -11.352069,-1.91825 -14.022189,-1.06758 4.317231,8.78654 12.719102,16.50902 19.492428,22.48858 -7.831399,-1.40307 -13.103338,-3.40492 -18.697596,-1.61306 5.099309,8.17914 16.102144,13.14367 31.488422,21.03529 -13.016805,-1.55137 -23.396191,-4.64648 -36.246058,-4.63663 z"
+       id="path10"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccccccccccc" />
+    <path
+       sodipodi:type="star"
+       style="fill:#d4aa00;stroke-width:0.13921215"
+       id="path14"
+       sodipodi:sides="5"
+       sodipodi:cx="34.146797"
+       sodipodi:cy="208.61079"
+       sodipodi:r1="6.4634209"
+       sodipodi:r2="3.2317109"
+       sodipodi:arg1="0.92729522"
+       sodipodi:arg2="1.5556137"
+       inkscape:flatsided="false"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="m 38.02485,213.78153 -3.828989,-1.9394 -3.768343,2.05476 0.661255,-4.24089 -3.118669,-2.94896 4.237667,-0.68161 1.840899,-3.87731 1.957767,3.81963 4.256407,0.55264 -3.0277,3.04228 z"
+       inkscape:transform-center-x="0.030322562"
+       inkscape:transform-center-y="-0.58829241"
+       note="Bb4"
+       data-notes="Bb"
+       class="note" />
+    <circle
+       style="fill:#aa00d4;stroke-width:0.19092026"
+       id="path16"
+       cx="30.54801"
+       cy="227.04266"
+       r="2.4546893"
+       note="A"
+       data-notes="A"
+       class="note" />
+    <circle
+       style="fill:#ff8080;stroke-width:0.19092026"
+       id="path18"
+       cx="25.365889"
+       cy="267.13596"
+       r="2.3183174"
+       note=""
+       data-notes="E"
+       class="note" />
+    <circle
+       style="fill:#00ffff;stroke-width:0.19092026"
+       id="path20"
+       cx="54.549416"
+       cy="257.72632"
+       r="2.181946"
+       note="F"
+       data-notes="F"
+       class="note" />
+    <circle
+       style="fill:#ffdd55;stroke-width:0.19092026"
+       id="path24"
+       cx="36.684727"
+       cy="249.81673"
+       r="1.7728311"
+       note="G"
+       data-notes="G"
+       class="note" />
+  </g>
+</svg>
