@@ -26,11 +26,19 @@
 </head>
 
 <body>
-    <h1>Tonnetz</h1>
-
-       <iframe id="tonnetz" class="resp-iframe" src="images/tannenbaum.svg"  allow="autoplay" allowfullscreen></iframe>
-
-        <!-- <embed id="tonnetz" src="tonnetz.svg" type="image/svg+xml"> -->
+    <h1>Hyvää joulua</h1>
+        <br />
+        <label for="oscillator-waveform">Oscillator waveform</label>
+        <select 
+            name="oscillator-waveform"
+            id="oscillator-waveform"
+            onchange="changeSynthWaveform(this)">
+            <option value="triangle">Triangle</option>
+            <option value="sine">Sine</option>
+            <option value="square">Square</option>
+            <option value="sawtooth">Sawtooth</option>
+        </select>
+        <embed id="tonnetz" src="images/tannenbaum.svg" type="image/svg+xml">
     <script src="tonnetz.js" />
 </body>
 
