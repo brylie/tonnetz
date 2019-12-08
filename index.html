@@ -1,11 +1,13 @@
 <html>
 
 <head>
+    <script src="https://unpkg.com/unmute" data-add-button="true"></script>
     <script src="https://unpkg.com/@webcomponents/webcomponentsjs@^2/webcomponents-bundle.js"></script>
     <script src="https://unpkg.com/tone"></script>
     <script src="https://unpkg.com/@tonejs/ui"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
     <script src="lib/teoria-2.2.0/teoria.js"></script>
+    
 
     <style>
         .resp-container {
@@ -27,18 +29,21 @@
 
 <body>
     <h1>Hyvää joulua</h1>
-        <br />
-        <label for="oscillator-waveform">Oscillator waveform</label>
-        <select 
-            name="oscillator-waveform"
-            id="oscillator-waveform"
-            onchange="changeSynthWaveform(this)">
-            <option value="triangle">Triangle</option>
-            <option value="sine">Sine</option>
-            <option value="square">Square</option>
-            <option value="sawtooth">Sawtooth</option>
-        </select>
-        <embed id="tonnetz" src="images/tannenbaum.svg" type="image/svg+xml">
+    <br />
+
+    <label for="oscillator-waveform">Oscillator waveform</label>
+    <select 
+        name="oscillator-waveform"
+        id="oscillator-waveform"
+        onchange="changeSynthWaveform(this)">
+        <option value="triangle">Triangle</option>
+        <option value="sine">Sine</option>
+        <option value="square">Square</option>
+        <option value="sawtooth">Sawtooth</option>
+    </select>
+    
+    <embed id="tonnetz" src="images/tannenbaum.svg" type="image/svg+xml">
+        
     <script src="tonnetz.js" />
 </body>
 
