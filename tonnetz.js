@@ -3,10 +3,12 @@ var polySynth = new Tone.PolySynth(4, Tone.Synth).toMaster();
 
 var tonnetz = document.getElementById("tonnetz");
 
+var oscillatorWaveformSelect = document.getElementById("oscillator-waveform");
+
 tonnetz.addEventListener("load", attachSounds);
 
-function attachSounds() {
-    var tonnetzSvg = tonnetz.contentDocument.documentElement;
+function attachSounds(event) {
+    var tonnetzSvg = this.getSVGDocument();
 
     attachNoteSounds(tonnetzSvg);
     attachChordSounds(tonnetzSvg);
@@ -66,4 +68,15 @@ function stopChord(event) {
     });
 
     polySynth.triggerRelease(notes_with_octave)
+}
+
+
+function changeSynthWaveform(select) {
+    oscillatorType = select.value;
+
+    polySynth.set({
+        "oscillator": {
+            "type": oscillatorType
+        }
+    });
 }
